@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagina 1</title>
+    <link rel="stylesheet" href="vendor/bootstrap-4.3.1-dist/css/bootstrap.css" >
+    <link rel="stylesheet" href="main.css">
+    <script src="vendor/jquery-3.4.1/jquery.min.js"></script>
+    <script src="vendor/bootstrap-4.3.1-dist/js/bootstrap.js" ></script>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+</head>
+<body class="fondo-principal">
+        <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(157, 243, 214,0.65);">
+                    <a class="navbar-brand" href="#">
+                        <img src="src/img/logo.png" alt="logo" style="width: 100px;">
+                    </a>
+                    <a class="navbar-brand align-self-center" href="#">
+                        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:28px;font: oblique bold 120% cursive">BOTICA "EL ANGEL"</p>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra" aria-controls="barra" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="barra">
+                      <div class="container">
+                            <div class="row justify-content-end">
+                                <!-- <div class="col-1"></div> -->
+                                    <form class="form-inline my-2 my-lg-0" >
+                                            <ul class="navbar-nav mr-auto ">
+                                                <li class="nav-item text-right">
+                                                        <ion-icon name="person" style="font-size:32px;"></ion-icon>
+                                                </li>
+                                                <li class="nav-item align-self-center text-righ">
+                                                        <div class="">HOLA, ADMIN</div>
+                                                </li>
+                                                <li class="nav-item dropdown text-righ">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Opciones
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(157, 243, 214,0.65);">
+                                                        <a class="dropdown-item" href="pantalla6.html">Editar productos</a>
+                                                        <a class="dropdown-item" href="pantalla7.html">Lista de pedidos </a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="pantalla1.html">Salir</a>
+                                                      </div>
+                                                  </li>
+                                            </ul>
+                                      </form>
+                              </div>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+    <div >
+        <br><br>
+        <div class="row text-center">
+            <h1 class="col-12">PRODUCTO</h1>
+            </div>
+        <br>
+        
+        <div class="form-group ">
+                <div class="col-md-8 mb-3 offset-md-2">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="validationTooltipUsernamePrepend"><ion-icon name="search"></ion-icon></span>
+                          </div>
+                          <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Buscar producto" aria-describedby="validationTooltipUsernamePrepend" required>
+                        </div>
+                      </div> 
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <table class="fondo-iniciar-sesion table table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col-2"></th>
+                            <th scope="col-2">Descripcion</th>
+                            <th scope="col-1">Precio</th>
+                            <th scope="col-2">Stock disponible</th>
+                            <th scope="col-1"></th>
+                            <th scope="col-1"></th>
+                            <th scope="col-1"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Paracetamol</td>
+                            <td>150 g.</td>
+                            <td>S/. 1.00</td>
+                            <td>234 u</td>
+                            <td><button class="btn"><ion-icon style="font-size:20px" name="create"></ion-icon></button></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ibuprofeno</td>
+                            <td>150 g.</td>
+                            <td>S/.<input class="col-4" type="text" style="opacity: .5" value="1.00"></td>
+                            <td><input class="col-4" type="text" style="opacity: .5" value="4">u.</td>
+                            <td></td>
+                            <td><button class="btn"><ion-icon style="font-size:20px" name="checkbox"></ion-icon></button></td>
+                            <td><button class="btn"><ion-icon name="close"></ion-icon></ion-icon></button></td>
+
+                        </tr>
+                        <tr>
+                            <td>Amoxicilina</td>
+                            <td>150 g.</td>
+                            <td>S/. 1.00</td>
+                            <td>234 u</td>
+                            <td><button class="btn"><ion-icon style="font-size:20px" name="create"></ion-icon></button></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagina 1</title>
+    <link rel="stylesheet" href="vendor/bootstrap-4.3.1-dist/css/bootstrap.css" >
+    <link rel="stylesheet" href="main.css">
+    <script src="vendor/jquery-3.4.1/jquery.min.js"></script>
+    <script src="vendor/bootstrap-4.3.1-dist/js/bootstrap.js" ></script>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+</head>
+<body class="fondo-principal">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(157, 243, 214,0.65);">
+            <a class="navbar-brand" href="#">
+                <img src="src/img/logo.png" alt="logo" style="width: 100px;">
+            </a>
+            <a class="navbar-brand align-self-center" href="#">
+                    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:28px;font: oblique bold 120% cursive">BOTICA "EL ANGEL"</p>
+                </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra" aria-controls="barra" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="barra">
+              <div class="container">
+                    <div class="row justify-content-end">
+                        <!-- <div class="col-1"></div> -->
+                            <form class="form-inline my-2 my-lg-0" >
+                                    <ul class="navbar-nav mr-auto ">
+                                        <li class="nav-item text-right">
+                                                <ion-icon name="person" style="font-size:32px;"></ion-icon>
+                                        </li>
+                                        <li class="nav-item align-self-center">
+                                                <div class="">HOLA, ADMIN</div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Opciones
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(157, 243, 214,0.65);">
+                                                <a class="dropdown-item" href="pantalla6.html">Editar productos</a>
+                                                <a class="dropdown-item" href="pantalla7.html">Lista de pedidos </a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="pantalla1.html">Salir</a>
+                                              </div>
+                                          </li>
+                                    </ul>
+                              </form>
+                      </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+	</br>
+    <div class=" letra">
+            <div class="container accordion" style="opacity:.9;" id="listaPedidos">
+                    <div class="card">
+                        <div class="card-header text-center disabled" id="" >
+                                <div class="row" style="font-weight: bold;font-size :24px;">
+                                <div class="col-lg-4  col-md-4 col-sm-6 col-6 ">Numero Pedido</div>
+                                <div class="col-lg-4  col-md-4 col-sm-6 col-6 ">Tiempo limite</div>
+                                <div class="col-lg-4  col-md-4 col-sm-12 col-12 ">Detalles</div>
+                                </div>
+                                </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="pedido1">
+                        <h5 class="mb-0">
+                            <div class="row text-center ">
+                                <div class="col-lg-4  col-md-4 col-sm-6 col-6 align-self-center">Pedido 1</div>
+                                <div class="col-lg-4  col-md-4 col-sm-6 col-6  align-self-center">15/05/19 17:35 Horas</div>
+                                <div class="col-lg-4  col-md-4 col-sm-12 col-12 ">
+                                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#tablaContenido" aria-expanded="true" aria-controls="tablaContenido">
+                                        <ion-icon name="eye" style="font-size:32px;"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </h5>
+                      </div>
+                      <div id="tablaContenido" class="collapse" aria-labelledby="pedido1" data-parent="#listaPedidos">
+                        <div class="card-body">
+                            <table class="col-md-8 offset-md-2 table table-hover">
+                                <thead>
+                                  <tr>
+                                    <th scope="col-lg-4  col-md-4 col-sm-6 col-6">#</th>
+                                    <th scope="col-lg-4  col-md-4 col-sm-6 col-6">Producto</th>
+                                    <th scope="col-lg-4  col-md-4 col-sm-6 col-6">Descripcion</th>
+                                    <th scope="col-lg-4  col-md-4 col-sm-6 col-6">Precio</th>
+                                    <th scope="col-lg-4  col-md-4 col-sm-6 col-6">Cantidad</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Amoxicilina</td>
+                                    <td>300 gm.</td>
+                                    <td>S/. 1.00</td>
+                                    <td>4 unidades</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Ibuprofeno</td>
+                                    <td>20 ml</td>
+                                    <td>S/. 0.80</td>
+                                    <td>2 unidades</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <br>
+                              <div class="col-md-8 offset-md-2 row">
+                                  <div class="col-md-8">
+                                    Total: S/. 5.60
+                                  </div>
+                                  <div class="col-md-4">
+                                    Estado
+                                    <button class="btn"><ion-icon name="checkbox-outline" style="font-size:32px;"></ion-icon></button>  
+                                    <button class="btn"><ion-icon name="close" style="font-size:32px;"></ion-icon></button>  
+                                  </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="pedido2">
+                          <h5 class="mb-0">
+                              <div class="row text-center ">
+                                  <div class="col-lg-4  col-md-4 col-sm-6 col-6 align-self-center">Pedido 2</div>
+                                  <div class="col-lg-4  col-md-4 col-sm-6 col-6 align-self-center">15/05/19 18:35 Horas</div>
+                                  <div class="col-lg-4  col-md-4 col-sm-12 col-12">
+                                      <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#tablaContenido2" aria-expanded="false" aria-controls="tablaContenido2">
+                                          <ion-icon name="eye" style="font-size:32px;"></ion-icon>
+                                      </button>
+                                  </div>
+                              </div>
+                          </h5>
+                        </div>
+                        <div id="tablaContenido2" class="collapse" aria-labelledby="pedido2" data-parent="#listaPedidos">
+                          <div class="card-body">
+                              <table class="col-md-10 offset-md-1 table table-hover">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">Producto</th>
+                                      <th scope="col">Descripcion</th>
+                                      <th scope="col">Precio</th>
+                                      <th scope="col">Cantidad</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>Amoxicilina</td>
+                                      <td>300 gm.</td>
+                                      <td>S/. 1.00</td>
+                                      <td>4 unidades</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">2</th>
+                                      <td>Ibuprofeno</td>
+                                      <td>20 ml</td>
+                                      <td>S/. 0.80</td>
+                                      <td>2 unidades</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <br>
+                                <div class="col-md-8 offset-md-2 row">
+                                    <div class="col-md-8">
+                                      Total: S/. 5.60
+                                    </div>
+                                    <div class="col-md-4">
+                                      Estado
+                                      <button class="btn"><ion-icon name="checkbox-outline" style="font-size:32px;"></ion-icon></button>  
+                                      <button class="btn"><ion-icon name="close" style="font-size:32px;"></ion-icon></button>  
+                                    </div>
+                                </div>
+                          </div>
+                      </div>
+                      
+                </div>
+            </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagina 1</title>
+    <link rel="stylesheet" href="vendor/bootstrap-4.3.1-dist/css/bootstrap.css" >
+    <link rel="stylesheet" href="main.css">
+    <script src="vendor/jquery-3.4.1/jquery.min.js"></script>
+    <script src="vendor/bootstrap-4.3.1-dist/js/bootstrap.js" ></script>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+</head>
+<body class="fondo-principal">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(157, 243, 214,0.65);">
+            <a class="navbar-brand" href="#">
+                <img src="src/img/logo.png" alt="logo" style="width: 100px;">
+            </a>
+            <a class="navbar-brand align-self-center" href="#">
+                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:28px;font: oblique bold 120% cursive">BOTICA "EL ANGEL"</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra" aria-controls="barra" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="barra">
+              <div class="container">
+                    <div class="row justify-content-end">
+                        <!-- <div class="col-1"></div> -->
+                            <form class="form-inline my-2 my-lg-0" >
+                                    <ul class="navbar-nav mr-auto ">
+                                        <li class="nav-item text-right">
+                                                <ion-icon name="person" style="font-size:32px;"></ion-icon>
+                                        </li>
+                                        <li class="nav-item align-self-center">
+                                                <div class="">HOLA, CLIENTE</div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Opciones
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(157, 243, 214,0.65);">
+                                                <a class="dropdown-item" href="pantalla4.html">Catalogo de productos</a>
+                                                <a class="dropdown-item" href="pantalla5.html">Pedido actual</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="pantalla1.html">Salir</a>
+                                              </div>
+                                          </li>
+                                    </ul>
+                              </form>
+                      </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div >
+        <br><br>
+        <div class="row text-center">
+            <h1 class="col-12">Pedido actual</h1>
+        </div>
+        <br>
+        <div class="row text-center">
+            <h4 class="col-12">Pedido N° 123</h4>
+        </div>
+        <div class="container">
+            <div class="row">
+                    <div class="col-9 fondo-iniciar-sesion">
+                        <br>
+                            <!--productos-->
+                                <div class="card mb-3" >
+                                        <div class="row no-gutters">
+                                          <div class="col-4">
+                                            <img src="src/img/paracetamol.PNG" class="card-img tam2" alt="Paracetamol">
+                                          </div>
+                                          <div class="col-4">
+                                            <div class="card-body text-center">
+                                              <h5 class="card-title">Paracetamol</h5>
+                                              <p>S/. 1.00</p>
+                                            </div>
+                                          </div>
+                                          <div class="col-2">
+                                                <div class="card-body">
+                                                    <input type="text" class="form-control" id="txtCantidad" disabled="disabled" value= 4>
+                                                </div>
+                                          </div>
+                                          <div class="col-2 text-center">
+                                              <div class="card-body">
+                                                    <button><ion-icon name="trash"></ion-icon></button>
+                                              </div>
+                                                
+                                          </div>
+                                        </div>
+                                </div>
+                                <div class="card mb-3" >
+                                        <div class="row no-gutters">
+                                          <div class="col-4">
+                                            <img src="src/img/ibuprofeno.PNG" class="card-img tam2" alt="Ibuprofeno">
+                                          </div>
+                                          <div class="col-4">
+                                            <div class="card-body text-center">
+                                              <h5 class="card-title">Ibuprofeno</h5>
+                                              <p>S/. 1.50</p>
+                                            </div>
+                                          </div>
+                                          <div class="col-2">
+                                                <div class="card-body">
+                                                    <input type="text" class="form-control" id="txtCantidad" disabled="disabled" value=1>
+                                                </div>
+                                          </div>
+                                          <div class="col-2 text-center">
+                                              <div class="card-body">
+                                                    <button><ion-icon name="trash"></ion-icon></button>
+                                              </div>
+                                                
+                                          </div>
+                                        </div>
+                                </div>
+                                <div class="card mb-3" >
+                                        <div class="row no-gutters">
+                                          <div class="col-4">
+                                            <img src="src/img/amoxicilina.PNG" class="card-img tam2" alt="Amoxicilina">
+                                          </div>
+                                          <div class="col-4">
+                                            <div class="card-body text-center">
+                                              <h5 class="card-title">Amoxicilina</h5>
+                                              <p>S/. 0.80</p>
+                                            </div>
+                                          </div>
+                                          <div class="col-2">
+                                                <div class="card-body">
+                                                    <input type="text" class="form-control" id="txtCantidad" disabled="disabled" value=7>
+                                                </div>
+                                          </div>
+                                          <div class="col-2 text-center">
+                                              <div class="card-body">
+                                                    <button><ion-icon name="trash"></ion-icon></button>
+                                              </div>
+                                                
+                                          </div>
+                                        </div>
+                                </div>
+                                <br>
+                    </div>
+                    <div class="col-3 fondo-iniciar-sesion text-center">
+                        <br>
+                        <h1>Total</h1>
+                        <div class="row justify-content-center">
+                            <div class="col-8 ">
+                                    <input type="text" class="form-control" id="totalPedido" placeholder="Total" value=11.1 disabled="disabled">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row justify-content-center">
+                            <button type="button" class="btn btn-secondary">Enviar pedido</button>
+                        </div>
+                        <br>
+                        <div class="row justify-content-center">
+                                <button type="button" class="btn btn-secondary">Limpiar pedido</button>
+                        </div>
+                        <br>
+                    </div>
+            </div>
+        </div>
+        
+    
+    </div>
+</body>
+</html>

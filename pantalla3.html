@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagina 1</title>
+    <link rel="stylesheet" href="vendor/bootstrap-4.3.1-dist/css/bootstrap.css" >
+    <link rel="stylesheet" href="main.css">
+    <script src="vendor/jquery-3.4.1/jquery.min.js"></script>
+    <script src="vendor/bootstrap-4.3.1-dist/js/bootstrap.js" ></script>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+</head>
+<body class="fondo-principal">
+  
+    <div class="container letra">
+            <br>
+            <form action="pantalla1.html">
+                <button class="btn btn-danger" type="submit" style="border:8px">REGRESAR</button>   
+            </form>
+
+            <div class="row text-center">
+                <h1 class="col-12">REGISTRO DE DATOS</h1>
+            </div>
+
+        <div class="row">
+            <div class="col-8 fondo-iniciar-sesion offset-2">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-10  offset-lg-1">
+                                <form action="pantalla4.html" class="letra-registro">
+                                    <br>
+                                        <div class="form-row">
+                                          <div class=" col-md-6 mb-3">
+                                            <label for="nombres">Nombres:</label>
+                                            <input type="text" class="form-control" id="nombres" placeholder="Ingrese nombres"  required>
+                                          </div>
+                                          <div class="col-md-6 mb-3">
+                                            <label for="apellidos">Apellidos:</label>
+                                            <input type="text" class="form-control" id="apellidos" placeholder="Ingrese apellidos" value="" required>
+                                          </div>
+                                        </div>
+                                        <div class="form-row">
+                                          <div class="col-md-6 mb-3">
+                                            <label for="correo">Correo:</label>
+                                            <input type="text" class="form-control " id="correo" placeholder="Ingrese correo" required>
+                                            <small class="form-text text-muted">Tenga en cuenta que el usuario para el logeo sera el mismo que su correo</small >
+                                          </div>
+                                          <div class="col-md-6 mb-3">
+                                            <label for="telefono">Teléfono:</label>
+                                            <input type="text" class="form-control" id="telefono" placeholder="Telefono" required>
+                                          </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="dni">DNI:</label>
+                                                <input type="text" class="form-control " id="dni" placeholder="DNI" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-6 mb-3">
+                                              <label for="clave">Contraseña:</label>
+                                              <input type="password" class="form-control " id="clave" placeholder="Ingrese contraseña" required>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                              <label for="telefono">Repetir contraseña:</label>
+                                              <input type="password" class="form-control" id="contraseñaValidar" placeholder="Ingrese de nuevo la contraseña" required>
+                                            </div>
+                                          </div>
+                                        <div class="form-row justify-content-center">
+                                            <button class="btn btn-primary col-lg-6  col-md-6 col-sm-6 col-6 " type="submit">Registrarse</button>
+                                        </div>
+                                      </form>
+                                <br>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

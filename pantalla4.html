@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagina 1</title>
+    <link rel="stylesheet" href="vendor/bootstrap-4.3.1-dist/css/bootstrap.css" >
+    <link rel="stylesheet" href="main.css">
+    <script src="vendor/jquery-3.4.1/jquery.min.js"></script>
+    <script src="vendor/bootstrap-4.3.1-dist/js/bootstrap.js" ></script>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+</head>
+<body class="fondo-principal">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(157, 243, 214,0.65);">
+            <a class="navbar-brand" href="#">
+                <img src="src/img/logo.png" alt="logo" style="width: 100px;">
+            </a>
+            <a class="navbar-brand align-self-center" href="#">
+                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:28px;font: oblique bold 120% cursive">BOTICA "EL ANGEL"</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra" aria-controls="barra" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="barra">
+              <div class="container">
+                    <div class="row justify-content-end">
+                        <!-- <div class="col-1"></div> -->
+                            <form class="form-inline my-2 my-lg-0" >
+                                    <ul class="navbar-nav mr-auto ">
+                                        <li class="nav-item text-right">
+                                                <ion-icon name="person" style="font-size:32px;"></ion-icon>
+                                        </li>
+                                        <li class="nav-item align-self-center">
+                                                <div class="">HOLA, CLIENTE</div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Opciones
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(157, 243, 214,0.65);">
+                                                <a class="dropdown-item" href="pantalla4.html">Catalogo de productos</a>
+                                                <a class="dropdown-item" href="pantalla5.html">Pedido actual</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="pantalla1.html">Salir</a>
+                                              </div>
+                                          </li>
+                                    </ul>
+                              </form>
+                      </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div >
+        <br><br>
+        <div class="row text-center">
+            <h1 class="col-12">Catálogo de productos</h1>
+        </div>
+        <br>
+        <div class="form-group row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-8 mb-3 ">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="validationTooltipUsernamePrepend"><ion-icon name="search"></ion-icon></span>
+                      </div>
+                      <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Buscar producto" aria-describedby="validationTooltipUsernamePrepend" required>
+                    </div>
+                  </div> 
+      </div>
+        <br>
+        <div class="row">
+            <div class="col-8 offset-2 fondo-iniciar-sesion justify-content-center minTam">
+                <br>
+                <div class="row text-center">
+                    <br>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="card tam centrar">
+                                <img src="src/img/paracetamol.PNG" class="card-img-top altoImagen" alt="Paracetamol">
+                                <div class="card-body">
+                                  <h5 class="card-title">Paracetamol</h5>
+                                  <p class="card-text">S/. 1.00</p>
+                                  <div class="row justify-content-center">
+                                        <div class="row col-12 justify-content-center">
+                                              <button type="button" class="btn btn-secondary col-2">-</button>
+                                              <input type="text" class="form-control col-4" id="txtCantidad">
+                                              <button type="button" class="btn btn-secondary col-2">+</button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row justify-content-center">
+                                        <button type="button" class="btn btn-secondary">Agregar</button>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>  
+                              <br>  
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                <div class="card tam centrar" >
+                                        <img src="src/img/ibuprofeno.PNG" class="card-img-top altoImagen" alt="Ibuprofeno">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Ibuprofeno</h5>
+                                          <p class="card-text">S/. 1.50</p>
+                                          <div class="row justify-content-center">
+                                                <div class="row col-12 justify-content-center">
+                                                      <button type="button" class="btn btn-secondary col-2">-</button>
+                                                      <input type="text" class="form-control col-4" id="txtCantidad">
+                                                      <button type="button" class="btn btn-secondary col-2">+</button>
+                                                </div>
+                                            </div>
+                                        <br>
+                                        <div class="row justify-content-center">
+                                            <button type="button" class="btn btn-secondary">Agregar</button>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <br>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                <div class="card tam centrar" >
+                                        <img src="src/img/amoxicilina.PNG" class="card-img-top altoImagen" alt="Amoxicilina">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Amoxicilina</h5>
+                                          <p class="card-text">S/. 0.80</p>
+                                          <div class="row justify-content-center">
+                                              <div class="row col-12 justify-content-center">
+                                                    <button type="button" class="btn btn-secondary col-2">-</button>
+                                                    <input type="text" class="form-control col-4" id="txtCantidad">
+                                                    <button type="button" class="btn btn-secondary col-2">+</button>
+                                              </div>
+                                          </div>
+                                        <br>
+                                        <div class="row justify-content-center">
+                                            <button type="button" class="btn btn-secondary">Agregar</button>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <br>
+                        </div>
+                        <br>
+                </div>
+                
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+                <nav aria-label="...">
+                        <ul class="pagination">
+                          <li class="page-item disabled">
+                            <span class="page-link">Anterior</span>
+                          </li>
+                          <li class="page-item active" aria-current="page">
+                                <span class="page-link">
+                                  1
+                                  <span class="sr-only">(current)</span>
+                                </span>
+                              </li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Siguiente</a>
+                          </li>
+                        </ul>
+                      </nav>
+        </div>
+    </div>
+</body>
+</html>
